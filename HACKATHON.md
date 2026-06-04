@@ -1,13 +1,13 @@
 # Cursor × Deep Agents Speedrun
 
-**4-hour hackathon — 6:00pm to 10:00pm**
+**Demo 4:00–6:00pm | Hackathon 6:00–10:00pm**
 **~150 attendees | Teams of 4–5 | Prizes, cash, and credits**
 
 ---
 
 ## The Challenge
 
-You will receive a product brief at kickoff. In **2.5 hours**, build a working AI agent using **Cursor** and the **Deep Agents framework** — then deploy it publicly so anyone can use it.
+You will receive a product brief at kickoff. In **~3 hours**, build a working AI agent using **Cursor** and the **Deep Agents framework** — then deploy it publicly so anyone can use it.
 
 At 9:00pm, an automated eval harness fires 10 tasks at your agent. Highest score wins.
 
@@ -79,9 +79,9 @@ Tie-breaker: **earliest submission timestamp wins.**
 
 | Time | What's happening |
 |------|-----------------|
-| 6:00–6:15 | Opening demo — Cursor tips, architecting from scratch, Deep Agents |
-| 6:15–6:30 | Team up, brief revealed, starter kit walkthrough |
-| 6:30–9:00 | Build time |
+| 4:00–6:00 | Demo & presentation — Cursor tips, architecting from scratch, Deep Agents |
+| 6:00–6:15 | Hackathon kicks off — team up, brief revealed, starter kit walkthrough |
+| 6:15–9:00 | Build time (~2h45min) |
 | 8:00–9:00 | Roving judges scoring UI/UX bonuses |
 | 8:55 | 5-minute warning |
 | **9:00** | **Submission deadline** |

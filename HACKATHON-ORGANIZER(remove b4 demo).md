@@ -3,7 +3,8 @@
 ## Event Overview
 
 - **Format:** "Cursor × Deep Agents Speedrun"
-- **Time:** 6:00–10:00pm (4 hours)
+- **Demo/Presentation:** 4:00–6:00pm (separate block before hackathon)
+- **Hackathon:** 6:00–10:00pm (4 hours)
 - **Attendees:** ~150 (self-organize into teams of 4–5, ~30 teams)
 - **Judging:** Automated eval harness — top 5 advance to stage demos
 
@@ -11,11 +12,18 @@
 
 ## Run-of-Show
 
+### Pre-Hackathon: Demo Block
+
 | Time | Activity | Owner |
 |------|----------|-------|
-| 6:00–6:15 | Jerry's 15-min demo: Cursor tips, architecting from scratch (PRD template), Deep Agents | Jerry |
-| 6:15–6:30 | Team formation, product brief reveal, starter repo walkthrough | Jerry or Ben? |
-| 6:30–9:00 | Build time (2.5 hrs). Roving judges circulate at 8:00 for UI bonus scoring. | Judges |
+| 4:00–6:00pm | Demo/presentation: Cursor tips, architecting from scratch (PRD template), Deep Agents | Jerry |
+
+### Hackathon Block
+
+| Time | Activity | Owner |
+|------|----------|-------|
+| 6:00–6:15 | Team formation, product brief reveal, starter repo walkthrough | Jerry or Ben? |
+| 6:15–9:00 | Build time (~2h45min). Roving judges circulate at 8:00 for UI bonus scoring. | Judges |
 | 8:55 | 5-min warning announcement | Ben |
 | 9:00 | Submission deadline. Eval harness runs automatically. | Eval system |
 | 9:05 | Top 5 scores posted to leaderboard. Teams notified. | Ben |
