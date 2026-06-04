@@ -46,12 +46,14 @@ uv --version
 
 Your agent calls an AI model and (sometimes) other services. You'll need keys for whichever ones your agent uses:
 
-| Key | What it's for | Where to get it |
-|-----|---------------|-----------------|
-| `ANTHROPIC_API_KEY` | Runs Claude (the default model) | https://console.anthropic.com |
-| `OPENAI_API_KEY` | Runs GPT models | https://platform.openai.com |
-| `TAVILY_API_KEY` | Web search (used by the research example) | https://www.tavily.com (free tier) |
-| `LANGSMITH_API_KEY` | **Required** to run the local dev server + Studio | https://smith.langchain.com/settings (free) |
+
+| Key                 | What it's for                                     | Where to get it                                                                     |
+| ------------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `ANTHROPIC_API_KEY` | Runs Claude (the default model)                   | [https://console.anthropic.com](https://console.anthropic.com)                      |
+| `OPENAI_API_KEY`    | Runs GPT models                                   | [https://platform.openai.com](https://platform.openai.com)                          |
+| `TAVILY_API_KEY`    | Web search (used by the research example)         | [https://www.tavily.com](https://www.tavily.com) (free tier)                        |
+| `LANGSMITH_API_KEY` | **Required** to run the local dev server + Studio | [https://smith.langchain.com/settings](https://smith.langchain.com/settings) (free) |
+
 
 > You only need the keys your chosen agent actually uses — but `LANGSMITH_API_KEY` is required for the local server in every case.
 
@@ -111,6 +113,8 @@ To stop the server, press `Ctrl+C` in the terminal.
 
 The `deepagents` CLI creates a fresh project for you and runs its dev server with one command each.
 
+> **Want to write your own agent as Python code (your own graph) and view it in a browser UI?** See **[`SCAFFOLD-YOUR-OWN-AGENT.md`](./SCAFFOLD-YOUR-OWN-AGENT.md)** — it walks through hand-building an `agent.py` and opening it in LangGraph Studio on localhost.
+
 ### B1. Install the CLI
 
 Install it as a standalone tool (available everywhere on your machine):
@@ -159,13 +163,15 @@ Edit the agent code, save, and the server reloads automatically — no restart n
 
 When you look inside an agent project, these are the files that matter:
 
-| File | What it does |
-|------|--------------|
+
+| File                    | What it does                                                                             |
+| ----------------------- | ---------------------------------------------------------------------------------------- |
 | `agent.py` (or similar) | Defines your agent — its model, tools, and instructions. **This is what you edit most.** |
-| `langgraph.json` | Tells the dev server where your agent lives (which file, which variable). |
-| `deepagents.toml` | Project config for CLI-scaffolded agents (name, model, sandbox). |
-| `.env` | Your secret API keys. Never commit this. |
-| `pyproject.toml` | The list of Python packages the project needs. |
+| `langgraph.json`        | Tells the dev server where your agent lives (which file, which variable).                |
+| `deepagents.toml`       | Project config for CLI-scaffolded agents (name, model, sandbox).                         |
+| `.env`                  | Your secret API keys. Never commit this.                                                 |
+| `pyproject.toml`        | The list of Python packages the project needs.                                           |
+
 
 A minimal `langgraph.json` looks like this — it just points the server at the `agent` variable inside `agent.py`:
 
@@ -181,10 +187,10 @@ A minimal `langgraph.json` looks like this — it just points the server at the 
 
 ## Troubleshooting
 
-**`command not found: uv`**
+`**command not found: uv**`
 Restart your terminal after installing `uv`. If it still fails, your shell's `PATH` may need the install location added (the installer prints instructions).
 
-**`command not found: langgraph`**
+`**command not found: langgraph**`
 You're running it outside an installed project. In Path A, make sure you ran `uv sync` first and prefix the command with `uv run` (i.e. `uv run langgraph dev`). In Path B, use `deepagents dev` instead.
 
 **Server starts but the agent errors immediately**
